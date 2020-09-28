@@ -10,6 +10,7 @@
 
 
 /* --- pre-existing css --- */
+
 nav{
   width:100%;
   position: fixed;
@@ -19,7 +20,6 @@ nav{
   font-size: 20px;
   z-index:1;
 }
-
 .stripey tr:nth-child(even) {
   background-color: gray;
 }
@@ -36,12 +36,9 @@ nav{
 .rightey td {
   text-align: right;
 }
-
-
 input[type="text"].pinkey:focus {
   background-color: pink;
 }
-
 
 body {
    background-color: skyblue;
@@ -79,7 +76,6 @@ img.cat{
   z-index:1;
 }
 
-
 span.a{
   word-wrap: normal;
 }
@@ -98,7 +94,6 @@ img.dog{
   right: 50px;
   bottom: 150px;
 }
-
 
 #positionMe{
   position: relative;
