@@ -10,7 +10,7 @@
 
 
 /* --- pre-existing css --- */
-
+<!--#11 Fixes nav bar and changes its properties-->
 nav{
   width:100%;
   position: fixed;
@@ -20,6 +20,7 @@ nav{
   font-size: 20px;
   z-index:1;
 }
+<!--#12 Gave table following class attributes and it worked-->
 .stripey tr:nth-child(even) {
   background-color: gray;
 }
@@ -36,26 +37,29 @@ nav{
 .rightey td {
   text-align: right;
 }
+
+<!--#13 Gave inputs the class attribute pinkey-->
 input[type="text"].pinkey:focus {
   background-color: pink;
 }
 
+<!--#2 Makes background sky blue-->
 body {
    background-color: skyblue;
 }
-
+<!--#3 chnages font for id itsgottbeme-->
 #igottabeme {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+<!--#4 Moves all paragrahs with class classy #10 pixels-->
 p.classy {
   margin-left: 10px;
 }
-
+<!--#5 Gives all div elements 50 pixel margin on bottom-->
 div {
   margin-bottom: 50px;
 }
-
+<!--#6 Gives all spans the following guidelines-->
 span{
     width: 100px;
     height: 50px;
@@ -68,7 +72,7 @@ span{
     border-color: blue;
     background-color: yellow;
 }
-
+<!--#8 Fixes cat to bottom right hand corner of page-->
 img.cat{
   position: fixed;
   bottom : 0px;
@@ -76,6 +80,7 @@ img.cat{
   z-index:1;
 }
 
+<!--#7 Show differnet text wrappings using spans-->
 span.a{
   word-wrap: normal;
 }
@@ -88,13 +93,14 @@ span.b{
 span.c{
   display: inline-block;
 }
-
+<!--#9 Moves the dog image to its new location-->
 img.dog{
   position: relative;
   right: 50px;
   bottom: 150px;
 }
 
+<!--#10 Moves the bird picture while keeping integrity of text-->
 #positionMe{
   position: relative;
 }
