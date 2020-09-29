@@ -1,4 +1,5 @@
 /* --- put your css here --- */ 
+/* --- 11 the NAV Bar --- */ 
 nav{
   width:100%;
   position: fixed;
@@ -9,22 +10,27 @@ nav{
   z-index:1;
 }
 
+/* --- 2 makes background blue --- */ 
 body {
    background-color: skyblue;
 }
 
+/* --- 3 changes font with this id --- */ 
 #igottabeme {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* --- 4 indents classy class 10 pixels --- */ 
 p.classy {
   margin-left: 10px;
 }
 
+/* --- 5 gives all divs margin bottom 50 pixels --- */ 
 div {
   margin-bottom: 50px;
 }
 
+/* --- 6 gives all spans following properties --- */ 
 span{
     width: 100px;
     height: 50px;
@@ -38,6 +44,7 @@ span{
     background-color: yellow;
 }
 
+/* --- 8 forces cat to bottom right --- */ 
 img.cat{
   position: fixed;
   bottom : 0px;
@@ -45,6 +52,7 @@ img.cat{
   z-index:1;
 }
 
+/* --- 7 uses different word wrapping --- */ 
 span.a{
   word-wrap: normal;
 }
@@ -58,12 +66,14 @@ span.c{
   display: inline-block;
 }
 
+/* --- 9 moves dog from its normal position --- */ 
 img.dog{
   position: relative;
   right: 50px;
   bottom: 150px;
 }
 
+/* --- 10 positions the bird to its new location --- */ 
 #positionMe{
   position: relative;
 }
