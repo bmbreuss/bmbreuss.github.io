@@ -1,1 +1,118 @@
+/* --- put your css here --- */ 
+/* --- 11 the NAV Bar --- */ 
+nav{
+  width:100%;
+  position: fixed;
+  background-color:green;
+  opacity: 0.9;
+  padding: 5px;
+  font-size: 20px;
+  z-index:1;
+}
+
+/* --- 2 makes background blue --- */ 
+body {
+   background-color: skyblue;
+}
+
+/* --- 3 changes font with this id --- */ 
+#igottabeme {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- 4 indents classy class 10 pixels --- */ 
+p.classy {
+  margin-left: 10px;
+}
+
+/* --- 5 gives all divs margin bottom 50 pixels --- */ 
+div {
+  margin-bottom: 50px;
+}
+
+/* --- 6 gives all spans following properties --- */ 
+span{
+    width: 100px;
+    height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: blue;
+    background-color: yellow;
+}
+
+/* --- 8 forces cat to bottom right --- */ 
+img.cat{
+  position: fixed;
+  bottom : 0px;
+  right: 0px;
+  z-index:1;
+}
+
+/* --- 7 uses different word wrapping --- */ 
+span.a{
+  word-wrap: normal;
+}
+
+span.b{
+  position: relative;
+  display: block;
+}
+
+span.c{
+  display: inline-block;
+}
+
+/* --- 9 moves dog from its normal position --- */ 
+img.dog{
+  position: relative;
+  right: 50px;
+  bottom: 150px;
+}
+
+/* --- 10 positions the bird to its new location --- */ 
+#positionMe{
+  position: relative;
+}
+
+img.bird{
+  position: absolute;
+  display: block;
+  top: 50px;
+  left: 250px;
+} 
+/* external css is imported into html using the <link> tag in the <head> section, as shown below.
+
+  <head>
+    <link rel="stylesheet" href="assignment02.css">
+  </head>
+
+*/
+
+
+/* --- pre-existing css --- */
+
+.stripey tr:nth-child(even) {
+  background-color: gray;
+}
+.stripey tr:nth-child(odd) {
+  background-color: white;
+}
+.stripey th {
+  color: white;
+  background-color: black;
+}
+.mousey td:hover {
+  background-color: yellow;
+}
+.rightey td {
+  text-align: right;
+}
+input[type="text"].pinkey:focus {
+  background-color: pink;
+}
+
 
