@@ -57,18 +57,7 @@ elem[18]
 elem[19]
 = document.getElementById("totals");
 
-function parTotal (elem){
-  let i =0;
-  for(i = 0; i<elem.length; i++){
-  let placeHolder = elem.children[1].innerHTML
-  placeHolder = Number.parseInt(placeHolder);
-  let parTotal = 0;
-  parTotal += placeHolder;
-  }
-    return parTotal
-    console.log(parTotal)
-   
-}
+
 
 let par1 = elem[1].children[1].innerHTML;
 par1 = Number.parseInt(par1);
@@ -180,13 +169,6 @@ function clear1 (elem){
   elem.children[3].innerHTML = "-"
 }
 
-function totalScore(elem){
-  let score = 0;
-  for(i in elem)
-    score = elem.children[2]
-  return score
-}
-console.log(elem[1].children[2].innterHTML)
 
 // display the number of children (all td elements)
 // console.log(elem.children.length);
