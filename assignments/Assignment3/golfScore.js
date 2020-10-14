@@ -116,15 +116,14 @@ par18 = Number.parseInt(par18);
 let totalPar = par1+par2+par3+ par4 + par5 + par6
 + par7 + par8 + par9 + par10+ par11 + par12 + par13
 + par14+ par15+ par16+ par17+ par18;
-
+  
 
 
 
 elem[19].children[1].innerHTML = 
   totalPar;
 
-elem[19].children[2].innerHTML = 7;
-elem[19].children[3].innerHTML = 7;
+
 
 // create an "add1" function
 function add1 (elem) {
@@ -169,12 +168,314 @@ function clear1 (elem){
   elem.children[3].innerHTML = "-"
 }
 
+function totalOver(elem1, elem2,elem3,elem4, elem5, elem6,elem7,elem8,elem9,elem10,elem11,elem12,elem13,elem14,elem15,elem16,elem17,elem18,elem19){
+  let hole1 = elem1.children[3].innerHTML
+  if(isNaN(hole1)){
+    hole1 = 0
+  }
+  else{
+   hole1 = Number.parseInt(hole1) 
+  }
+  
+  let hole2 = elem2.children[3].innerHTML
+  if(isNaN(hole2)){
+    hole2 = 0
+  }
+  else{
+   hole2 = Number.parseInt(hole2) 
+  }
+  
+  let hole3 = elem3.children[3].innerHTML
+  if(isNaN(hole3)){
+    hole3 = 0
+  }
+  else{
+   hole3 = Number.parseInt(hole3) 
+  }
+  
+  let hole4 = elem4.children[3].innerHTML
+  if(isNaN(hole4)){
+    hole4 = 0
+  }
+  else{
+   hole4 = Number.parseInt(hole4) 
+  }
+  
+  let hole5 = elem5.children[3].innerHTML
+  if(isNaN(hole5)){
+    hole5 = 0
+  }
+  else{
+   hole5 = Number.parseInt(hole5) 
+  }
+  
+  let hole6 = elem6.children[3].innerHTML
+  if(isNaN(hole6)){
+    hole6 = 0
+  }
+  else{
+   hole6 = Number.parseInt(hole6) 
+  }
+  
+  let hole7 = elem7.children[3].innerHTML
+  if(isNaN(hole7)){
+    hole7 = 0
+  }
+  else{
+   hole7 = Number.parseInt(hole7) 
+  }
+  
+  let hole8 = elem8.children[3].innerHTML
+  if(isNaN(hole8)){
+    hole8 = 0
+  }
+  else{
+   hole8 = Number.parseInt(hole8) 
+  }
+  
+  let hole9 = elem9.children[3].innerHTML
+  if(isNaN(hole9)){
+    hole9 = 0
+  }
+  else{
+   hole9 = Number.parseInt(hole9) 
+  }
+  
+  let hole10 = elem10.children[3].innerHTML
+  if(isNaN(hole10)){
+    hole10 = 0
+  }
+  else{
+   hole10 = Number.parseInt(hole10) 
+  }
+  
+  let hole11 = elem11.children[3].innerHTML
+  if(isNaN(hole11)){
+    hole11 = 0
+  }
+  else{
+   hole11 = Number.parseInt(hole11) 
+  }
+  
+  let hole12 = elem12.children[3].innerHTML
+  if(isNaN(hole12)){
+    hole12 = 0
+  }
+  else{
+   hole12 = Number.parseInt(hole12) 
+  }
+  
+  let hole13 = elem13.children[3].innerHTML
+  if(isNaN(hole13)){
+    hole13 = 0
+  }
+  else{
+   hole13 = Number.parseInt(hole13) 
+  }
+  
+  let hole14 = elem14.children[3].innerHTML
+  if(isNaN(hole14)){
+    hole14 = 0
+  }
+  else{
+   hole14 = Number.parseInt(hole14) 
+  }
+  
+  let hole15 = elem15.children[3].innerHTML
+  if(isNaN(hole15)){
+    hole15 = 0
+  }
+  else{
+   hole15 = Number.parseInt(hole15) 
+  }
+  
+  let hole16 = elem16.children[3].innerHTML
+  if(isNaN(hole16)){
+    hole16 = 0
+  }
+  else{
+   hole16 = Number.parseInt(hole16) 
+  }
+  
+  let hole17 = elem17.children[3].innerHTML
+  if(isNaN(hole17)){
+    hole17 = 0
+  }
+  else{
+   hole17 = Number.parseInt(hole17) 
+  }
+  
+  let hole18 = elem18.children[3].innerHTML
+  if(isNaN(hole18)){
+    hole18 = 0
+  }
+  else{
+   hole18 = Number.parseInt(hole18) 
+  }
+  
+  elem19.children[3].innerHTML = hole1+hole2+hole3+hole4+hole5+hole6+hole7+hole8+hole9+hole10+hole11+hole12+hole13+hole14+hole15+hole16+hole17+hole18
+}
+
+function totalScore(elem1, elem2,elem3,elem4, elem5, elem6,elem7,elem8,elem9,elem10,elem11,elem12,elem13,elem14,elem15,elem16,elem17,elem18,elem19){
+  let hole1 = elem1.children[2].innerHTML
+  if(isNaN(hole1)){
+    hole1 = 0
+  }
+  else{
+   hole1 = Number.parseInt(hole1) 
+  }
+  
+  let hole2 = elem2.children[2].innerHTML
+  if(isNaN(hole2)){
+    hole2 = 0
+  }
+  else{
+   hole2 = Number.parseInt(hole2) 
+  }
+  
+  let hole3 = elem3.children[2].innerHTML
+  if(isNaN(hole3)){
+    hole3 = 0
+  }
+  else{
+   hole3 = Number.parseInt(hole3) 
+  }
+  
+  let hole4 = elem4.children[2].innerHTML
+  if(isNaN(hole4)){
+    hole4 = 0
+  }
+  else{
+   hole4 = Number.parseInt(hole4) 
+  }
+  
+  let hole5 = elem5.children[2].innerHTML
+  if(isNaN(hole5)){
+    hole5 = 0
+  }
+  else{
+   hole5 = Number.parseInt(hole5) 
+  }
+  
+  let hole6 = elem6.children[2].innerHTML
+  if(isNaN(hole6)){
+    hole6 = 0
+  }
+  else{
+   hole6 = Number.parseInt(hole6) 
+  }
+  
+  let hole7 = elem7.children[2].innerHTML
+  if(isNaN(hole7)){
+    hole7 = 0
+  }
+  else{
+   hole7 = Number.parseInt(hole7) 
+  }
+  
+  let hole8 = elem8.children[2].innerHTML
+  if(isNaN(hole8)){
+    hole8 = 0
+  }
+  else{
+   hole8 = Number.parseInt(hole8) 
+  }
+  
+  let hole9 = elem9.children[2].innerHTML
+  if(isNaN(hole9)){
+    hole9 = 0
+  }
+  else{
+   hole9 = Number.parseInt(hole9) 
+  }
+  
+  let hole10 = elem10.children[2].innerHTML
+  if(isNaN(hole10)){
+    hole10 = 0
+  }
+  else{
+   hole10 = Number.parseInt(hole10) 
+  }
+  
+  let hole11 = elem11.children[2].innerHTML
+  if(isNaN(hole11)){
+    hole11 = 0
+  }
+  else{
+   hole11 = Number.parseInt(hole11) 
+  }
+  
+  let hole12 = elem12.children[2].innerHTML
+  if(isNaN(hole12)){
+    hole12 = 0
+  }
+  else{
+   hole12 = Number.parseInt(hole12) 
+  }
+  
+  let hole13 = elem13.children[2].innerHTML
+  if(isNaN(hole13)){
+    hole13 = 0
+  }
+  else{
+   hole13 = Number.parseInt(hole13) 
+  }
+  
+  let hole14 = elem14.children[2].innerHTML
+  if(isNaN(hole14)){
+    hole14 = 0
+  }
+  else{
+   hole14 = Number.parseInt(hole14) 
+  }
+  
+  let hole15 = elem15.children[2].innerHTML
+  if(isNaN(hole15)){
+    hole15 = 0
+  }
+  else{
+   hole15 = Number.parseInt(hole15) 
+  }
+  
+  let hole16 = elem16.children[2].innerHTML
+  if(isNaN(hole16)){
+    hole16 = 0
+  }
+  else{
+   hole16 = Number.parseInt(hole16) 
+  }
+  
+  let hole17 = elem17.children[2].innerHTML
+  if(isNaN(hole17)){
+    hole17 = 0
+  }
+  else{
+   hole17 = Number.parseInt(hole17) 
+  }
+  
+  let hole18 = elem18.children[2].innerHTML
+  if(isNaN(hole18)){
+    hole18 = 0
+  }
+  else{
+   hole18 = Number.parseInt(hole18) 
+  }
+  
+  elem19.children[2].innerHTML = hole1+hole2+hole3+hole4+hole5+hole6+hole7+hole8+hole9+hole10+hole11+hole12+hole13+hole14+hole15+hole16+hole17+hole18
+}
+
 
 // display the number of children (all td elements)
 // console.log(elem.children.length);
 // display the content of the + button, which is the first child of the fifth element
 // console.log(elem.children[4].children[0]); 
 
+
+elem[19].children[4].children[0].onclick =
+  function(){totalScore(elem[1],elem[2],elem[3],elem[4],elem[5],elem[6],elem[7],elem[8],elem[9],elem[10],elem[11],elem[12],elem[13],elem[14],elem[15],elem[16],elem[17],elem[18], elem[19]);};
+
+elem[19].children[4].children[1].onclick =
+  function(){totalOver(elem[1],elem[2],elem[3],elem[4],elem[5],elem[6],elem[7],elem[8],elem[9],elem[10],elem[11],elem[12],elem[13],elem[14],elem[15],elem[16],elem[17],elem[18], elem[19]);};
 // assign a function to the + button
 
 //hole 1
