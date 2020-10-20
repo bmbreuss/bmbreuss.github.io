@@ -1,7 +1,7 @@
 let elem = [];
 // assign the entire table row for hole 1 to a variable, elem
 
-//Sets All parts of the array to teh given element with the specified id tag. This is done for each element of array
+//Sets All parts of the array to the given element with the specified id tag. This is done for each element of array
 elem[1]
   = document.getElementById("1");
 
