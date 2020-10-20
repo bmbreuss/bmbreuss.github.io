@@ -176,7 +176,7 @@ function clear1 (elem){
 
 //Calculates the total over score passing all elements
 function totalOver(elem1, elem2,elem3,elem4, elem5, elem6,elem7,elem8,elem9,elem10,elem11,elem12,elem13,elem14,elem15,elem16,elem17,elem18,elem19){
- //Adds all elements of the over row by assigning variables for each hole
+ //Adds all elements of the over column by assigning variables for each hole
   let hole1 = elem1.children[3].innerHTML
   if(isNaN(hole1)){  
     hole1 = 0
@@ -321,11 +321,11 @@ function totalOver(elem1, elem2,elem3,elem4, elem5, elem6,elem7,elem8,elem9,elem
    hole18 = Number.parseInt(hole18) 
   }
   
-  //Sets the last row to be all the over for each hole added together
+  //Sets the last row element to be all the over for each hole added together
   elem19.children[3].innerHTML = hole1+hole2+hole3+hole4+hole5+hole6+hole7+hole8+hole9+hole10+hole11+hole12+hole13+hole14+hole15+hole16+hole17+hole18
 }
 
-//Same as above function, but instead for the total score row
+//Same as above function, but instead for the total score 
 function totalScore(elem1, elem2,elem3,elem4, elem5, elem6,elem7,elem8,elem9,elem10,elem11,elem12,elem13,elem14,elem15,elem16,elem17,elem18,elem19){
   let hole1 = elem1.children[2].innerHTML
   if(isNaN(hole1)){
