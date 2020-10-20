@@ -1,5 +1,7 @@
 let elem = [];
 // assign the entire table row for hole 1 to a variable, elem
+
+//Sets All parts of the array to teh given element with the specified id tag. This is done for each element of array
 elem[1]
   = document.getElementById("1");
 
@@ -58,7 +60,7 @@ elem[19]
 = document.getElementById("totals");
 
 
-
+//Gets the individual par for each hole respectivly 
 let par1 = elem[1].children[1].innerHTML;
 par1 = Number.parseInt(par1);
 
@@ -113,19 +115,20 @@ par17 = Number.parseInt(par17);
 let par18 = elem[18].children[1].innerHTML;
 par18 = Number.parseInt(par18);
 
+//calculates total par by giving it the above values
 let totalPar = par1+par2+par3+ par4 + par5 + par6
 + par7 + par8 + par9 + par10+ par11 + par12 + par13
 + par14+ par15+ par16+ par17+ par18;
   
 
 
-
+// Sets the value for total par to be in correct place on the page
 elem[19].children[1].innerHTML = 
   totalPar;
 
 
 
-// create an "add1" function
+// create an "add1" function that adds one to the score of the holes if the plus button is pressed. 
 function add1 (elem) {
   if(elem.children[2].innerHTML == "-") 
     elem.children[2].innerHTML = "1";
@@ -135,6 +138,7 @@ function add1 (elem) {
     elem.children[2].innerHTML = currentScore + 1;
   }
   
+  //This part calculates the over Section and correects it after every add1 button press. if the value is not a number resets value to -
   let score1 = elem.children[2].innerHTML
    let par1 =   elem.children[1].innerHTML
    if(isNaN(score1 - par1)){
@@ -145,7 +149,7 @@ function add1 (elem) {
   
 }
 
-//creates a subtract 1 function that also calculates over if - button is hit
+//creates a subtract 1 function that also calculates over if - button is hit using similar method as above just subtracting instead of adding
 function subtract1 (elem) {
   if(elem.children[2].innerHTML == "-") 
     elem.children[2].innerHTML = "-1";
@@ -154,6 +158,7 @@ function subtract1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
   }
+  //Does the same as above and calculates over when the subtract1 button is pressed
   let score1 = elem.children[2].innerHTML
    let par1 =   elem.children[1].innerHTML
    if(isNaN(score1 - par1)){
@@ -163,14 +168,17 @@ function subtract1 (elem) {
    elem.children[3].innerHTML = score1 - par1
 }
 
+//Creates a Clear function that resets the value of the given hole
 function clear1 (elem){
   elem.children[2].innerHTML = "-";
   elem.children[3].innerHTML = "-"
 }
 
+//Calculates the total over score passing all elements
 function totalOver(elem1, elem2,elem3,elem4, elem5, elem6,elem7,elem8,elem9,elem10,elem11,elem12,elem13,elem14,elem15,elem16,elem17,elem18,elem19){
+ //Adds all elements of the over row by assigning variables for each hole
   let hole1 = elem1.children[3].innerHTML
-  if(isNaN(hole1)){
+  if(isNaN(hole1)){  
     hole1 = 0
   }
   else{
@@ -313,9 +321,11 @@ function totalOver(elem1, elem2,elem3,elem4, elem5, elem6,elem7,elem8,elem9,elem
    hole18 = Number.parseInt(hole18) 
   }
   
+  //Sets the last row to be all the over for each hole added together
   elem19.children[3].innerHTML = hole1+hole2+hole3+hole4+hole5+hole6+hole7+hole8+hole9+hole10+hole11+hole12+hole13+hole14+hole15+hole16+hole17+hole18
 }
 
+//Same as above function, but instead for the total score row
 function totalScore(elem1, elem2,elem3,elem4, elem5, elem6,elem7,elem8,elem9,elem10,elem11,elem12,elem13,elem14,elem15,elem16,elem17,elem18,elem19){
   let hole1 = elem1.children[2].innerHTML
   if(isNaN(hole1)){
@@ -470,24 +480,30 @@ function totalScore(elem1, elem2,elem3,elem4, elem5, elem6,elem7,elem8,elem9,ele
 // display the content of the + button, which is the first child of the fifth element
 // console.log(elem.children[4].children[0]); 
 
-
+//Calculates the Total Score When this button is pressed and diplays it
 elem[19].children[4].children[0].onclick =
   function(){totalScore(elem[1],elem[2],elem[3],elem[4],elem[5],elem[6],elem[7],elem[8],elem[9],elem[10],elem[11],elem[12],elem[13],elem[14],elem[15],elem[16],elem[17],elem[18], elem[19]);};
 
+//Calculates total over when that button is pressed and displays it
 elem[19].children[4].children[1].onclick =
   function(){totalOver(elem[1],elem[2],elem[3],elem[4],elem[5],elem[6],elem[7],elem[8],elem[9],elem[10],elem[11],elem[12],elem[13],elem[14],elem[15],elem[16],elem[17],elem[18], elem[19]);};
-// assign a function to the + button
+
 
 //hole 1
+
+//Assign Function to + button for given row
 elem[1].children[4].children[0].onclick 
   = function(){add1(elem[1]);};
 
+//Assign Function to - button for given row
 elem[1].children[4].children[1].onclick
 = function(){subtract1(elem[1]);};
 
+//Assign Function to clear button for given row
 elem[1].children[4].children[2].onclick =
   function(){clear1(elem[1]);};
 
+//all functions repeated for each hole
 
 //Hole 2
 elem[2].children[4].children[0].onclick 
