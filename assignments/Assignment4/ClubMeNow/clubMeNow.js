@@ -47,7 +47,7 @@ function resetAllClubDistances() {
 	var str = JSON.stringify(clubs);
 	localStorage.setItem("clubs", str);
 	// and refresh screen
-	window.location.href = "clubDistanceList.html"; 
+	window.location.href = "https://bmbreuss.github.io/assignments/Assignment4/ClubMeNow/clubDistanceList.html"; 
 }
 
 // append one row to HTML table for each row in "clubs" array
@@ -175,13 +175,13 @@ function updateStats(shotDistance=0) {
 		var str = JSON.stringify(clubs);
 		localStorage.setItem("clubs", str);
 		// return to list screen
-		window.location.href = "clubDistanceList.html"; 
+		window.location.href = "https://bmbreuss.github.io/assignments/Assignment4/ClubMeNow/clubDistanceList.html"; 
 	}
 }
 
 // navigate to club distance list screen
 function cancelClub() {
-	window.location.href = "clubDistanceList.html"; 
+	window.location.href = "https://bmbreuss.github.io/assignments/Assignment4/ClubMeNow/clubDistanceList.html"; 
 }
 
 // navigate to club distance list screen
