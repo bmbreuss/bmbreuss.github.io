@@ -99,7 +99,7 @@ function undoLastShot() {
 
 // navigate to "About" screen
 function displayAbout() {
-	window.location.href = "clubAbout.html";
+	window.location.href = "ClubMeNowAbout.html";
 }
 
 // navigate to "Penalty Info" screen
