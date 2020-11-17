@@ -1,7 +1,4 @@
 // ---------- Global variables ----------
-
-//Var was used simply to better maniipulate in codePen
-
 // Covid19api variables
 let URL = "https://api.covid19api.com/summary";
 let covidJson;
@@ -47,8 +44,9 @@ let chartData = {
         ticks: {
           // logarithmic scale ignores maxTicksLimit
           maxTicksLimit: 11,
-          callback: function(label, index, labels) { //Creates log Scale 10 base up to 10000k but will break thereafter unfortunatly hope no more cases i suppose 
-            return (   label/1000 > 99999999 
+          callback: function(label, index, labels) { //Creates log Scale 10 base up to 100000k but will break thereafter unfortunatly hope no more cases i suppose 
+            return (   label/1000 > 999999999
+		    || label/1000 == 100000
                     || label/1000 == 10000 
                     || label/1000 == 1000 
                     || label/1000 == 100 
@@ -72,10 +70,6 @@ let chartData = {
 // var myChart = new Chart(ctx, chartData); // shows "Apples/Oranges"
 
 // ---------- loadContent() function ----------
-
-// Note: you can't execute API data dependent code outside the loadContent() function because the code might execute before the AJAX call responds, that is, it might execute before the variable, covidJson, is initialized with data from the API. Example below.
-// console.log(covidJson.Global.NewConfirmed); // error 
-
 // code below modified from: 
 // https://www.w3schools.com/js/js_ajax_intro.asp
 
