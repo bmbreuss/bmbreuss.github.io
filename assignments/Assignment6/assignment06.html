@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Assignment06</title>
 		<title>College Debt Estimator</title>
 		<!-- bootstrap 4 -->
@@ -16,7 +20,7 @@
 
 		<div class="container">
 
-			<div ng-app="myApp" ng-controller="myCtrl"> <!-- Make sure to place all ng items in a div -->
+			<div ng-app="myApp" ng-controller="myCtrl">
 
 				<form>
 
@@ -117,7 +121,7 @@
 										<td>
 											<input type="text" class="form-control" 
                              placeholder="0.0453" id="loan_int05" />
-										</td>pri
+										</td>
 										<td>
 											<span id="loan_bal05">$57,219.62</span>
 										</td>
@@ -132,15 +136,11 @@
 								<br />
 								<button type="button" class="btn btn-primary" 
                         ng-click="populate();">Re-calculate</button> 
-								
-								<button type="button" class="btn btn-primary" 
-                        onclick="saveChanges();">Save</button>
-								
-								<button type="button" class="btn btn-primary" 
-                        onclick="load();">Load</button>
-							
+								<button type="button" class="btn btn-secondary" 
+                        onclick="saveForm();">Save</button>
+								<button type="button" class="btn btn-secondary" 
+                        onclick="loadForm();">Load</button>
 							</div>
-						
 						</div>
 
 						<div class="col-lg-6">
@@ -153,11 +153,11 @@
 										<th>Int Amt</th>
 										<th>YE Bal</th>
 									</tr>
-									<tr ng-repeat="data in payments"> <!-- Populates the table using ng-repeat -->
-										<td>{{ data.year }}</td>
-										<td>{{ data.payment }}</td>
-										<td>{{ data.amount }}</td>
-										<td>{{ data.yeBal }}</td>
+									<tr ng-repeat="x in payments">
+										<td>{{ x.year }}</td>
+										<td>{{ x.payment }}</td>
+										<td>{{ x.amt }}</td>
+										<td>{{ x.ye }}</td>
 									</tr>
 								</table>
 							</div>
