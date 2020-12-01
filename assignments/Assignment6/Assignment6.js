@@ -1,6 +1,3 @@
-// ===== GLOBAL VARIABLES =====
-
-// default values
 let loans = [
     { loan_year: 2020, loan_amount: 10000.00, loan_int_rate: 0.0453 },
     { loan_year: 2021, loan_amount: 10000.00, loan_int_rate: 0.0453 },
@@ -8,39 +5,38 @@ let loans = [
     { loan_year: 2023, loan_amount: 10000.00, loan_int_rate: 0.0453 },
     { loan_year: 2024, loan_amount: 10000.00, loan_int_rate: 0.0453 }
 ]; 
-
 let loanWithInterest = 0;
 let int = 0;
 let payments;
 
-// ==== JavaScript Functions Useful for Formattting =====
+// ===== FUNCTIONS =====
 
-//Places coma in correct place
+// ----- Plain JavaScript Functions -----
+
+// -------------------------------------------------------
 function toComma(value) {
   return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-//Makes items that are supposed to be currency formmated like currency
-function toCurrency(value) {
-  return "$" + parseFloat(value).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,'); 
+// -------------------------------------------------------
+let toMoney = (value) => {
+  return `\$${toComma(value.toFixed(2))}`; 
 }
 
-
-function saveChanges ()  {
+// -------------------------------------------------------
+let saveForm = () => {
   localStorage.setItem(`as06`, JSON.stringify(loans));
 }
 
-
-function load() {
+// -------------------------------------------------------
+let loadForm = () => {
   if(localStorage.getItem(`as06`) != null){
      loans = JSON.parse(localStorage.getItem(`as06`));
      updateForm();
-  } 
-  else {
-     console.log("No items to load");
+  } else {
+     alert(`Error: no saved values`);
   }
 }
-
 
 // ----- JQUERY Functions -----
 
@@ -180,15 +176,15 @@ app.controller('myCtrl', function($scope) {
       $scope.payments[i] = {
         "year":loans[4].loan_year + i + 1,
         "payment": toMoney(pay), 
-        "amount": toMoney(int),
-        "yeBal": toMoney(total += int)
+        "amt": toMoney(int),
+        "ye": toMoney(total += int)
       }
     }
     $scope.payments[10] = {
       "year":loans[4].loan_year + 11,
       "payment": toMoney(total),
-      "amount": toMoney(0),
-      "yeBal":toMoney(0)
+      "amt": toMoney(0),
+      "ye":toMoney(0)
     }
   }
 });
