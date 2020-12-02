@@ -17,7 +17,7 @@ let paymentTable;
 
 //Makes items that are supposed to be currency formmated like currency
 function toCurrency(value) {
-  return "$" + parseFloat(value).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,'); 
+  return "$" + parseFloat(value).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,'); //found this puppy on stack overflow
 }//----------------------------------------------------------------------------------
 
 
